@@ -9,5 +9,6 @@ router.register('profile-viewset',views.UserProfileViewSet)
 
 urlpatterns =[
     path('hello-view/',views.HelloApiView.as_view()), #https://127.0.0.1:8000/api/hello-view/ will route you here to this
+    path('login/', views.UserLoginApiView.as_view()),
     path('',include(router.urls))
 ]
